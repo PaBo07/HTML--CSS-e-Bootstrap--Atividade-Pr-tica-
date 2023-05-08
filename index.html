@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FunkoStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosso Time</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nossos Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#vingadores">Coleção Vingadores</a></li>
+                <li><a class="dropdown-item" href="#harrypotter">Coleção Harry Potter</a></li>
+                <li><a class="dropdown-item" href="#pokemon">Coleção Pokemon</a></li>
+                <li><a class="dropdown-item" href="#ligadajustiça">Coleção Liga da Justiça</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/marvel/Capa-01.png" class="d-block w-100" alt="Capa-01">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/harry potter/Capa-02.png" class="d-block w-100" alt="Capa-02">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pokemon/Capa-03.png" class="d-block w-100" alt="Capa-03">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/liga da justiça/Capa-04.png" class="d-block w-100" alt="Capa-04">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  <section class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-lg-6">
+      <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Quem Somos...</h3>
+      <h2 class="lead">Somos uma loja online de vendas de Funko's POP!</h2>
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="assets/marvel/Tony-Stark-01.jpeg" alt="FunkoStore" class="d-block mx-lg-auto img-fluid" loading="lazy" width="400" height="200">
+    </div>
+  </section>
+
+  <section>
+    <h3>Quem Somos...</h3>
+    <h2>Somos uma loja online de vendas de Funko's POP!</h2>
+  </section>
+
+  <section class="carrossel" id="vingadores">
+    <h2 class="colecao-titulo">Coleção Vingadores</h2>
+    <!-- Slider main container -->
+    <div class="carrossel__container carrossel-corpo">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Homem-de-Ferro-01.jpeg" class="card-img-top" alt="Homem de Ferro">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Homem de Ferro</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Pantera-Negra-01.jpeg" class="card-img-top" alt="Pantera Negra">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Pantera Negra</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Thor-02.jpg" class="card-img-top" alt="Thor">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Thor</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Capitão-América-01.jpeg" class="card-img-top" alt="Capitão América">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Capitão América</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Hulk-01.jpeg" class="card-img-top" alt="Hulk">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Hulk</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Gavião-Arqueiro-01.jpeg" class="card-img-top" alt="Gavião Arqueiro">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Gavião Arqueiro</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/marvel/Viúva-Negra-01.jpeg" class="card-img-top" alt="Viúva Negra">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Viúva Negra</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+  </section>
+
+  <section class="carrossel" id="harrypotter">
+    <h2 class="colecao-titulo">Coleção Harry Potter</h2>
+    <!-- Slider main container -->
+    <div class="carrossel__container carrossel-corpo">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Harry-Potter-01.jpeg" class="card-img-top" alt="Harry Potter">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Harrry Potter</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Ron-Weasley-01.jpeg" class="card-img-top" alt="Ron Weasley">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Ron Weasley</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Hermione-Granger-02.jpeg" class="card-img-top" alt="Hermione Granger">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Hermione</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Albus-Dumbledor-01.jpeg" class="card-img-top" alt="Albus Dumbledor">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Albus Dumbledor</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Lord-Voldemort-02.jpeg" class="card-img-top" alt="Lord Voldemort">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Lord Voldemort</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Severus-Snape-01.jpeg" class="card-img-top" alt="Severus Snape">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Severus Snape</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/harry potter/Bellatrix-Lestrange-02.jpeg" class="card-img-top" alt="Bellatrix Lestrange">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Bellatrix</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+  </section>
+
+  <section class="carrossel" id="pokemon">
+    <h2 class="colecao-titulo">Coleção Pokemon</h2>
+    <!-- Slider main container -->
+    <div class="carrossel__container carrossel-corpo">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Bulbasaur-01.jpeg" class="card-img-top" alt="Bulbasaur">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Bulbasaur</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Cubone-02.jpeg" class="card-img-top" alt="Cubone">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Cubone</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Raichu-01.jpeg" class="card-img-top" alt="Raichu">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Raichu</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Arcanine-01.jpeg" class="card-img-top" alt="Arcanine">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Arcanine</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Charizard-01.jpeg" class="card-img-top" alt="Charizard">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Charizard</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Pikachu-01.jpeg" class="card-img-top" alt="Pikachu">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Pikachu</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/pokemon/Meowth-01.jpeg" class="card-img-top" alt="Meowth">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Meowth</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+  </section>
+
+  <section class="carrossel" id="ligadajustiça">
+    <h2 class="colecao-titulo">Coleção Liga da Justiça</h2>
+    <!-- Slider main container -->
+    <div class="carrossel__container carrossel-corpo">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Batman-02.jpeg" class="card-img-top" alt="Batman">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Batman</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Coringa-02.jpeg" class="card-img-top" alt="Coringa">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Coringa</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Aquaman-01.jpeg" class="card-img-top" alt="Aquaman">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Aquaman</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Arlequina-01.jpeg" class="card-img-top" alt="Arlequina">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Arlequina</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Flash-03.jpeg" class="card-img-top" alt="Flash">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Flash</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Cyborg-01.jpeg" class="card-img-top" alt="Cyborg">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Cyborg</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Mulher-Maravilha-02.jpeg" class="card-img-top" alt="Mulher Maravilha">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Mulher Maravilha</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/liga da justiça/Superman-02.jpeg" class="card-img-top" alt="Superman">
+                <div class="card-body card-corpo">
+                  <h5 class="card-title">Superman</h5>
+                  <p class="card-text">De R$ 599,90 por apenas <strong class="destaque"> R$ 399,90</strong></p>
+                  <p class="card-text">Em Até <strong class="destaque">6X R$ 66,65 Sem Juros</strong></p>
+                  <a href="#" class="btn btn-success btn-cartao">Comprar</a>
+                  <a href="#" class="btn btn-success btn-cartao"><i class="bi bi-cart-check-fill"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      breakpoints: {
+        1200:{
+          slidesPerView: 3,
+        },
+        500:{
+          slidesPerView: 2,
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>

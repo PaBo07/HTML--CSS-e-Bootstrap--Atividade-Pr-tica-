@@ -1,0 +1,49 @@
+:root{
+  --cor-fundo-01:#AA0CB3;
+  --cor-fundo-02: #632B66;
+  --cor-fundo-03:grey;
+  --cor-fundo-cartao: black;
+  --cor-fonte: #ffffff;
+  --cor-destaque: green;
+  --fonte-01: 'Quando', serif;
+}
+
+body{
+  background-color: var(--cor-fundo-03);
+  color: var(--cor-fonte);
+  font-family: var(--fonte-01);
+}
+
+.funko-colecao{
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--cor-fundo-03);
+}
+
+.colecao-titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.card-grupo{
+  padding-top: 10px;
+}
+
+.card-corpo{
+  background-color: var(--cor-fundo-cartao);
+  color: var(--cor-fonte);
+}
+
+.destaque{
+  color:var(--cor-destaque);
+}
+
+.btn-cartao{
+  margin-bottom: 5px;
+}
+
+.carrossel-corpo{
+  margin: 10px;
+}
